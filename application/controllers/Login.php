@@ -38,6 +38,13 @@ class Login extends CI_Controller {
         }
     }
     
+    /**
+     * Connect to facebook for authentication
+     */
+    public function facebook() {
+        
+    }
+    
     public function logout() {
         $this->session->set_flashdata('msg', 'You have been logged out');
         $this->session->unset_userdata(array('user', 'is_logged_in'));
